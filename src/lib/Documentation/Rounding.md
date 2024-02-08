@@ -21,7 +21,9 @@ There are only 2 blocks so far.
 The list of blocks will grow soon.
 
 
-## (Round () to the nearest ())
+## ```scratch
+(Round () to the nearest ())
+```
 
 This block rounds input 1 to the nearest input 2.
 
@@ -30,8 +32,9 @@ This block rounds input 1 to the nearest input 2.
 
 This Block **might** round to the nearest (input 2 / 2) if put a **small** number in input 2
 
-
+```scratch
 ## < Does () round to () when rounding to the nearest ()? >
+```
 
 This block reports either ‘true’ or ‘false’. This block checks if input one rounds to input 2 when rounding to the nearest input 3.
 
