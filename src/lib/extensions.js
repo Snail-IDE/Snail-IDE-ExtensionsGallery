@@ -10,7 +10,7 @@ export default [
         description: "Expansion to the rounding blocks",
         code: "CharCoalAfterLife/rounding.js",
         banner: "CharCoalAfterLife/rounding.png",
-        documentation: "Rounding",
+        documentation: "rounding-plus",
         creator: "CharCoalAfterLife",
         isGitHub: true,
     }
