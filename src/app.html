@@ -3,21 +3,21 @@
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" href="%sveltekit.assets%/favicon.ico" />
-		<title>PenguinMod Extra Extensions</title>
+		<title>Snail IDE Extra Extensions</title>
 
 		<meta name="title" content="PenguinMod Extra Extensions">
 		<meta name="description" content="More community extensions that haven't made it to the menu yet.">
 		<meta property="theme-color" content="#51D3F4">
 		
 		<meta property="og:type" content="website">
-		<meta property="og:url" content="https://extensions.penguinmod.com/">
-		<meta property="og:title" content="PenguinMod Extra Extensions">
-		<meta property="og:image" content="https://extensions.penguinmod.com/favicon.ico">
+		<meta property="og:url" content="https://snail-ide-extensions-gallery.vercel.app/">
+		<meta property="og:title" content="Snail IDE Extra Extensions">
+		<meta property="og:image" content="https://snail-ide-extensions-gallery.vercel.app/favicon.ico">
 		
-		<meta property="twitter:url" content="https://extensions.penguinmod.com/">
-		<meta property="twitter:title" content="PenguinMod Extra Extensions">
+		<meta property="twitter:url" content="https://snail-ide-extensions-gallery.vercel.app/">
+		<meta property="twitter:title" content="Snail IDE Extra Extensions">
 		<meta property="twitter:description" content="More community extensions that haven't made it to the menu yet.">
-		<meta property="twitter:image" content="https://extensions.penguinmod.com/favicon.ico">
+		<meta property="twitter:image" content="https://snail-ide-extensions-gallery.vercel.app/favicon.ico">
 
 		<meta name="viewport" content="width=device-width" />
 		<style>
@@ -28,13 +28,13 @@
 				fill: black !important;
 			}
 			a {
-    		    color: dodgerblue;
+    		    color: rgb(97, 55, 247);
     		}
     		a:visited {
     		    color: #862aff;
     		}
     		body.dark-mode a {
-    		    color: #00c3ff;
+    		    color: #5900ff;
     		}
     		body.dark-mode a:visited {
     		    color: #af72ff;
@@ -48,7 +48,7 @@
 	<script>
 		const body = document.getElementById("PAGE_BODY");
 		const loop = () => {
-			const darkmode = String(localStorage.getItem("pm:dark")) === "true";
+			const darkmode = String(localStorage.getItem("sn:dark")) === "true";
 			body.setAttribute("class", darkmode ? "dark-mode" : "");
 			if (darkmode) {
 				body.style.background = "#111";

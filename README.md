@@ -12,8 +12,8 @@ Create your extension. You can find a lot of details [here](https://docs.turbowa
 
 #### Important Guidelines:
 - Your extension should not already exist on the gallery. Please check the
-[Pull Requests](https://github.com/PenguinMod/PenguinMod-ExtensionsGallery/pulls)
-and [Gallery page](https://extensions.penguinmod.com/) to confirm.
+[Pull Requests](https://github.com/Snail-IDE/Snail-IDE-ExtensionsGallery/pulls)
+and [Gallery page](https://snail-ide-extensions-gallery.vercel.app/) to confirm.
 - Your extension should be created for a specific purpose. An extension with random blocks someone might need will likely not get accepted if the blocks are not in a certain theme, like math or rendering.
 - Your extension should be easily explainable in 1-2 sentences or a single picture. This is what will determine whether you can be on the gallery or not.
 - Your extension should be MIT licensed (not compatible with the MIT license, should be the actual MIT license. This may change in the future.)
@@ -32,7 +32,7 @@ Ideally, this banner / thumbnail should be 600x300 pixels. (may be resized if it
 ### Step 3.
 Add your extension in the `static/extensions` folder.
 
-Open [this link](https://github.com/PenguinMod/PenguinMod-ExtensionsGallery/tree/main/static/extensions) in a new tab to open the folder.
+Open [this link](https://github.com/Snail-IDE/Snail-IDE-ExtensionsGallery/tree/main/static/extensions) in a new tab to open the folder.
 
 Click `Add File` at the top and click `Create new file`.
 

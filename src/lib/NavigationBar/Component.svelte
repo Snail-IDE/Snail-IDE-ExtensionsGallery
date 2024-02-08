@@ -4,38 +4,34 @@
     import BarButton from "./Button.svelte";
 
     const toggleTheme = () => {
-        if (localStorage.getItem("pm:dark") !== "true") {
-            localStorage.setItem("pm:dark", true);
+        if (localStorage.getItem("sn:dark") !== "true") {
+            localStorage.setItem("sn:dark", true);
             return;
         }
-        localStorage.setItem("pm:dark", false);
+        localStorage.setItem("sn:dark", false);
     };
 </script>
 
 <div class="bar">
     <a class="logo" href="/">
-        <img class="logo-image" src="/navicon.png" alt="PenguinMod" />
+        <img class="logo-image" src="/navicon.png" alt="Snail IDE" />
     </a>
     <div style="margin-right: 12px;" />
     <BarPage style="padding:0.5rem" on:click={toggleTheme}>
         <img src="/icons/moon.svg" alt="Theme" />
     </BarPage>
     <BarPage link={"/docs"}>Documentation</BarPage>
-    <BarButton
-        highlighted="true"
-        link={"https://discord.gg/NZ9MBMYTZh"}
-        noredirect="true"
-    >
-        Join our Discord!
-    </BarButton>
 </div>
 
 <style>
     :root {
-        --penguinmod-color: #00c3ff;
+        --bright-purple: #b735ff; /* Bright purple color */
+        --dark-purple: #4d0077;   /* Dark purple color */
     }
+
     :global(body.dark-mode) {
-        --penguinmod-color: #009ccc;
+        --bright-purple: #6a1b9a; /* Adjusted bright purple for dark mode */
+        --dark-purple: #38006b;   /* Adjusted dark purple for dark mode */
     }
 
     .bar {
@@ -43,7 +39,7 @@
         width: 100%;
         left: 0px;
         top: 0px;
-        background: var(--penguinmod-color);
+        background: var(--bright-purple); /* Use bright purple color */
         height: 3rem;
         color: white;
         display: flex;
@@ -62,14 +58,17 @@
     .logo {
         height: 100%;
     }
+
     .logo-image {
         margin-top: 10%;
         height: 80%;
         transition: 0.15s ease all;
     }
+
     .logo-image:hover {
         margin-top: 5%;
         height: 90%;
         transition: 0.15s ease all;
     }
 </style>
+

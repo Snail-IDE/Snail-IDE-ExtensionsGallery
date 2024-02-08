@@ -5,11 +5,11 @@
     let displayedTheme = "light";
     function themeUpdate() {
         const isDark = themeSwitcher.value === "dark";
-        localStorage.setItem("pm:dark", isDark);
+        localStorage.setItem("sn:dark", isDark);
     }
 
     onMount(() => {
-        const darkTheme = String(localStorage.getItem("pm:dark")) === "true";
+        const darkTheme = String(localStorage.getItem("sn:dark")) === "true";
         displayedTheme = darkTheme ? "dark" : "light";
     });
 </script>

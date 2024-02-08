@@ -24,7 +24,7 @@
     <p>
         To use some of these extensions in your projects, click the "Copy URL"
         button on an extension and
-        <a href="/load" target="_blank">load it into PenguinMod,</a>
+        <a href="/load" target="_blank">load it into Snail IDE,</a>
         or click the "View" button to create a new project with the extension.
     </p>
 
@@ -45,8 +45,8 @@
     </div>
 
     <p style="text-align: center;">
-        Note: Some extensions may be added to the Extension Gallery in
-        PenguinMod Studio.<br />If you cannot find an extension that was
+        Note: Some extensions may be added to the Extension Gallery in the
+        Snail IDE Editor.<br />If you cannot find an extension that was
         previously listed here, check there.
     </p>
 
