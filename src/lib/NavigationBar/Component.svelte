@@ -14,7 +14,7 @@
 
 <div class="bar">
     <a class="logo" href="/">
-        <img class="logo-image" src="/navicon.png" alt="Snail IDE" />
+        <img class="logo-image" src="/navicon.svg" alt="Snail IDE" />
     </a>
     <div style="margin-right: 12px;" />
     <BarPage style="padding:0.5rem" on:click={toggleTheme}>
