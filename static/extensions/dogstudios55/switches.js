@@ -146,7 +146,7 @@
         }
     }
     setInterval(async () => {
-        if (Boolean((localStorage.getItem('isswitchon') === true))) {
+        if (Boolean((localStorage.getItem('isswitchon') == 'true'))) {
             Scratch.vm.runtime.startHats(`${Extension.prototype.getInfo().id}_switch`)
         };
     }, (0.01 * 1000));
@@ -175,31 +175,19 @@
         isEdgeActivated: false
     });
     Extension.prototype["callswitch"] = async (args, util) => {
-        if (Boolean((args["onoroff"] == 'OFF'))) {
-            localStorage.setItem('isswitchon', false)
+        if (Boolean((args["onoroff"] == 'ON'))) {
+            localStorage.setItem('isswitchon', 'true')
 
         } else {
-            localStorage.setItem('isswitchon', true)
+            localStorage.setItem('isswitchon', 'false')
 
         };
     };
 
     menus["powersettings"] = {
         acceptReporters: true,
-        items: [...[...[], 'OFF'], 'ON']
+        items: [...[...[], 'ON'], 'OFF']
     }
-
-    blocks.push({
-        opcode: "callswitch",
-        blockType: Scratch.BlockType.COMMAND,
-        text: "Call Button",
-        arguments: {},
-        disableMonitor: true,
-        isEdgeActivated: false
-    });
-    Extension.prototype["callswitch"] = async (args, util) => {
-        Scratch.vm.runtime.startHats(`${Extension.prototype.getInfo().id}_switchbutton`)
-    };
 
     blocks.push({
         opcode: "switchbutton",
@@ -210,6 +198,18 @@
         isEdgeActivated: false
     });
     Extension.prototype["switchbutton"] = async (args, util) => {};
+
+    blocks.push({
+        opcode: "callswitchbutton",
+        blockType: Scratch.BlockType.COMMAND,
+        text: "Call Button",
+        arguments: {},
+        disableMonitor: true,
+        isEdgeActivated: false
+    });
+    Extension.prototype["callswitchbutton"] = async (args, util) => {
+        Scratch.vm.runtime.startHats(`${Extension.prototype.getInfo().id}_switchbutton`)
+    };
 
     Scratch.extensions.register(new Extension());
 })(Scratch);
